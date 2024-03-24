@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="componentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.quizpresenter3.FXMLController">
+    <children>
+        <Button fx:id="excelQuestionBankButton" layoutX="416.0" layoutY="11.0" onAction="#handleExcelQuestionBankButtonAction" prefHeight="46.0" prefWidth="166.0" text="Choose Excel Question Bank" />
+        <Label id="questionDisplayArea" fx:id="questionDisplayArea" layoutX="22.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="152.0" prefWidth="750.0" style="-fx-background-color: #faebd7;" wrapText="true">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font></Label>
+      <Label fx:id="optionA" layoutX="27.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="30.0" style="-fx-background-color: #faebd7;" text="A" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionB" layoutX="27.0" layoutY="288.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="30.0" style="-fx-background-color: #faebd7;" text="B" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionC" layoutX="27.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="30.0" style="-fx-background-color: #faebd7;" text="C" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionD" layoutX="27.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="30.0" style="-fx-background-color: #faebd7;" text="D" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionE" layoutX="27.0" layoutY="468.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="30.0" style="-fx-background-color: #faebd7;" text="E" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="answerDisplayArea" alignment="CENTER" contentDisplay="CENTER" layoutX="331.0" layoutY="11.0" minHeight="16" minWidth="30.0" onMouseEntered="#handleAnswerDisplayAreaOnMouseEntered" onMouseExited="#handleAnswerDisplayAreaOnMouseExited" prefHeight="46.0" prefWidth="77.0" style="-fx-background-color: #7fff00;" wrapText="true">
+         <font>
+            <Font name="Garamond" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="backwardButton" layoutX="18.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleBackwardButtonAction" prefHeight="46.0" prefWidth="48.0" text="&lt;">
+         <font>
+            <Font name="Garamond" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="forwardButton" layoutX="66.0" layoutY="15.0" mnemonicParsing="false" onAction="#handleForwardButtonAction" prefHeight="46.0" prefWidth="48.0" text="&gt;">
+         <font>
+            <Font name="Garamond" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="optionADisplayArea" layoutX="69.0" layoutY="228.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0" style="-fx-border-color: #faebd7; -fx-background-color: #ffffff;" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionBDisplayArea" layoutX="66.0" layoutY="288.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0" style="-fx-border-color: #faebd7; -fx-background-color: #ffffff;" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionCDisplayArea" layoutX="66.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0" style="-fx-border-color: #faebd7; -fx-background-color: #ffffff;" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionDDisplayArea" layoutX="66.0" layoutY="408.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0" style="-fx-border-color: #faebd7; -fx-background-color: #ffffff;" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="optionEDisplayArea" layoutX="66.0" layoutY="468.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="700.0" style="-fx-border-color: #faebd7; -fx-background-color: #ffffff;" wrapText="true">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fontSizeRegulator" alignment="CENTER" layoutX="185.0" layoutY="11.0" prefHeight="46.0" prefWidth="77.0" text="80">
+         <font>
+            <Font name="Garamond" size="24.0" />
+         </font>
+      </TextField>
+      <Label fx:id="answerTimer" alignment="CENTER" contentDisplay="CENTER" layoutX="689.0" layoutY="11.0" minHeight="16" minWidth="30.0" onMouseEntered="#handleAnswerTimerDisplayAreaOnMouseEntered" onMouseExited="#handleAnswerTimerDisplayAreaOnMouseExited" prefHeight="46.0" prefWidth="77.0" style="-fx-background-color: #000000;" textAlignment="CENTER" textFill="#13bf06" wrapText="true">
+         <font>
+            <Font name="Garamond Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answerTimeDuration" alignment="CENTER" layoutX="605.0" layoutY="11.0" prefHeight="46.0" prefWidth="77.0" text="10">
+         <font>
+            <Font name="Garamond" size="24.0" />
+         </font>
+      </TextField>
+      <ToggleButton fx:id="autoButton" layoutX="689.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleAutoButtonOnAction" prefHeight="20.0" prefWidth="48.0" text="Auto" />
+      <Label fx:id="bottomBar" layoutX="22.0" layoutY="551.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="750.0" wrapText="true">
+         <font>
+            <Font name="Garamond" size="40.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

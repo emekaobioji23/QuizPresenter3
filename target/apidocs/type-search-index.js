@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"com.mycompany.quizpresenter3","l":"AnswerTimerManager"},{"p":"com.mycompany.quizpresenter3","l":"AutoModeManager"},{"p":"com.mycompany.quizpresenter3","l":"FXMLController"},{"p":"com.mycompany.quizpresenter3","l":"MainWindow"},{"p":"com.mycompany.quizpresenter3","l":"Second"}];updateSearchResults();
